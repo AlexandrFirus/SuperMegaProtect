@@ -2,14 +2,14 @@
 
 namespace SuperProtector.Abstract
 {
-    public abstract class FileProtector<T> : IFileProtector where T : class
+    public abstract class DocumentProtector<T> : IDocumentProtector where T : class
     {
         private ILogger _logger;
         private IFileLoader<T> _loader;
         private IFileWatcher _watcher;
         private string _targetDirectory;
 
-        protected FileProtector(ILogger logger, IFileLoader<T> loader, IFileWatcher watcher, string targetDirectory)
+        protected DocumentProtector(ILogger logger, IFileLoader<T> loader, IFileWatcher watcher, string targetDirectory)
         {
             _logger = logger;
             _loader = loader;

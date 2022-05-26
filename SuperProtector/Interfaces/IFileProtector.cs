@@ -1,6 +1,6 @@
 ﻿namespace SuperProtector.Interfaces
 {
-    public interface IFileProtector
+    public interface IDocumentProtector
     {
         public void Start();
     }

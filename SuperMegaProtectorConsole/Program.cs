@@ -7,7 +7,7 @@ var targetDirectory = @"c:\targethtml\";
 
 CheckDirectories(sourceDirectory, targetDirectory);
 
-IFileProtector htmlPtotector = new HtmlFileProtector(new ConsoleLogger(),
+IDocumentProtector htmlPtotector = new HtmlDocProtector(new ConsoleLogger(),
     new HtmlDocLoader(),
     new HtmlFileWatcher(sourceDirectory),
     targetDirectory);

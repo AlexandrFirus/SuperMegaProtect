@@ -5,9 +5,9 @@ using SuperProtector.Interfaces;
 
 namespace SuperProtector.Html
 {
-    public class HtmlFileProtector : FileProtector<HtmlDocument>
+    public class HtmlDocProtector : DocumentProtector<HtmlDocument>
     {
-        public HtmlFileProtector(ILogger logger, IFileLoader<HtmlDocument> loader, FileWatcher watcher, string targetDirectory)
+        public HtmlDocProtector(ILogger logger, IFileLoader<HtmlDocument> loader, FileWatcher watcher, string targetDirectory)
             : base(logger, loader, watcher, targetDirectory)
         {
         }
