@@ -7,7 +7,7 @@ namespace SuperProtector.Html
 {
     public class HtmlDocProtector : DocumentProtector<HtmlDocument>
     {
-        public HtmlDocProtector(ILogger logger, IFileLoader<HtmlDocument> loader, FileWatcher watcher, string targetDirectory)
+        public HtmlDocProtector(ILogger logger, IFileLoader<HtmlDocument> loader, IFileWatcher watcher, string targetDirectory)
             : base(logger, loader, watcher, targetDirectory)
         {
         }
